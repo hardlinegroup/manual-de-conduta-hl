@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b0f17">
+  <title>1º BPM HARDLINE — Manual de Conduta</title>
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <div class="brand">
+        <img src="assets/logo.svg" alt="1º BPM HARDLINE">
+        <div class="brand-copy">
+          <strong>1º BPM</strong>
+          <span>HARDLINE</span>
+        </div>
+      </div>
+      <nav class="nav" id="nav"></nav>
+      <div class="sidebar-footer">
+        <span class="status-dot"></span>
+        <span>Sistema operacional</span>
+        <span class="footer-version">v1.0</span>
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="Abrir menu">☰</button>
+        <div class="breadcrumbs"><span>1º BPM</span><b>/</b><strong id="crumb">Manual de Conduta</strong></div>
+        <div class="top-actions">
+          <label class="search"><span>⌕</span><input id="searchInput" type="search" placeholder="Pesquisar no manual..." autocomplete="off"><kbd>Ctrl K</kbd></label>
+          <span class="version">v1.0</span>
+        </div>
+      </header>
+
+      <section class="content" id="content"></section>
+    </main>
+  </div>
+  <div class="search-modal hidden" id="searchModal"><div class="search-panel"><div class="search-head"><strong>Pesquisar no Manual</strong><button id="closeSearch">Esc</button></div><input id="modalSearch" placeholder="Digite um termo, código ou assunto..."><div id="results"></div></div></div>
+  <script src="js/app.js"></script>
+</body>
+</html>
