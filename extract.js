@@ -73,7 +73,7 @@ for (const id in sections) {
     .replace(/\$/g, '\\$');
   
   const regex = new RegExp(`(${id}:\\{[^}]*?html:\`)[\\s\\S]*?(\`\\})`, 'g');
-  appJs = appJs.replace(regex, `$1${escapedHtml}$2`);
+  appJs = appJs.replace(regex, (match, p1, p2) => p1 + escapedHtml + p2);
 }
 
 // Remove the `app.js` renderer's own duplicate footer buttons if they existed
