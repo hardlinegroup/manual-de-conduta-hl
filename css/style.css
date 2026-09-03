@@ -668,12 +668,12 @@ tr:last-child td {
 .pursuit-row.p6 { border-color: rgba(160,100,255,0.3); color: #c8a0ff; }
 .vehicle-cards { display: grid; gap: 12px; margin: 20px 0; }
 .vehicle-card { border: 1px solid var(--line); border-radius: 6px; padding: 18px 20px; display: flex; gap: 16px; align-items: flex-start; background: var(--panel); }
-.vehicle-card .v-label { font-size: 11px; font-weight: 800; letter-spacing: 1px; padding: 4px 10px; border-radius: 4px; flex-shrink: 0; margin-top: 2px; }
+.vehicle-card .v-label { width: 110px; text-align: center; font-size: 11px; font-weight: 800; letter-spacing: 1px; padding: 4px 10px; border-radius: 4px; flex-shrink: 0; margin-top: 2px; }
 .vehicle-card.primary .v-label { background: rgba(216, 74, 92, 0.15); color: #ff8a9a; }
 .vehicle-card.secondary .v-label { background: rgba(229, 165, 46, 0.12); color: var(--gold); }
 .vehicle-card.tertiary .v-label { background: rgba(195, 214, 255, 0.1); color: var(--blue3); }
 .vehicle-card .v-body { font-size: 13.5px; line-height: 1.6; color: var(--text); }
-.def-list { margin: 16px 0; }
-.def-item { border-left: 3px solid var(--blue3); padding: 14px 18px; margin-bottom: 12px; background: rgba(195, 214, 255, 0.05); border-radius: 0 6px 6px 0; }
-.def-term { font-size: 13px; color: #fff; font-weight: 800; letter-spacing: 1px; margin-bottom: 6px; text-transform: uppercase; }
-.def-desc { font-size: 13.5px; color: var(--text); }
+.def-list { margin: 16px 0; display: flex; flex-direction: column; gap: 12px; }
+.def-item { border-left: 3px solid var(--blue3); padding: 14px 18px; background: rgba(195, 214, 255, 0.03); border-radius: 0 6px 6px 0; display: flex; gap: 16px; align-items: flex-start; border-top: 1px solid var(--line); border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+.def-term { width: 160px; flex-shrink: 0; font-size: 13px; color: #fff; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; margin-top: 2px; }
+.def-desc { font-size: 13.5px; color: var(--text); line-height: 1.6; }
