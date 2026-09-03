@@ -781,49 +781,46 @@ const pages = {
         <span class="callout-icon">🚗</span>
         <div>É obrigatório a mudança de classe da viatura utilizando a tecla <strong>"G"</strong> para a mesma classe do veículo a ser acompanhado!</div>
       </div>`},
-  boosting:{title:'Boosting',group:'CURSOS',icon:'🚘',eyebrow:'Curso',lead:'Módulo específico para procedimentos relacionados a operações de boosting.',html:`<h2>Como Funciona</h2>
-      <p>Ao achar o veículo alvo, os meliantes irão furtá-lo do modo convencional para destrancar e ligá-lo. O veículo contém um dispositivo GPS de furto que sinaliza um alarme direto para a central policial (<strong>TRACKING</strong>). Os meliantes tentam retirar esse GPS — regressivamente o alarme demora mais para alertar, até não alertar mais.</p>
+  boosting:{title:'Boosting',group:'CURSOS',icon:'🚘',eyebrow:'Curso',lead:'Módulo específico para procedimentos relacionados a operações de boosting.',html:`<div class="callout warn">
+  <span class="callout-icon">⚠️</span>
+  <div>Última atualização: 02/09/2026 as 22:02</div>
+</div>
 
-      <h2>Termos Usados</h2>
-      <div class="def-list">
-        <div class="def-item"><div class="def-term">PRINCIPAL</div><div class="def-desc">Nome dado para o veículo que está sendo roubado.</div></div>
-        <div class="def-item"><div class="def-term">APOIOS</div><div class="def-desc">Demais veículos que estão no início da QRU, que na maioria das vezes tentará sair do local e retornará depois.</div></div>
-        <div class="def-item"><div class="def-term">TRACKING</div><div class="def-desc">Nome do alarme enviado para a central policial, mostrando a localização do veículo com nome, classe, placa e cor.</div></div>
-      </div>
+<h2>I. DIRETRIZES TÁTICAS GERAIS</h2>
+<ul class="rule-list">
+  <li><span class="rule-num">▪</span> <strong>Prioridade Absoluta:</strong> O veículo principal é o foco primário de toda a operação. Caso inoperante e haja fuga a pé, a prioridade permanece na captura do suspeito principal, mesmo que isso exija descontinuar a perseguição aos apoios.</li>
+  <li><span class="rule-num">▪</span> <strong>Deslocamento Inicial:</strong> Três viaturas devem deslocar-se imediatamente ao veículo interceptado para iniciar o acompanhamento. As demais unidades permanecem em QRV, aguardando solicitação conforme a classe do procedimento.</li>
+  <li><span class="rule-num">▪</span> <strong>Contenção de Apoios:</strong> Confirmado o apoio aos suspeitos, a viatura terciária deve conter o veículo de apoio. Com a chegada de reforço, a unidade retorna ao acompanhamento principal assumindo funções de adiantamento e cerco.</li>
+  <li><span class="rule-num">▪</span> <strong>Objetivo Tático:</strong> Impedir que o veículo de apoio realize reparos, abastecimento ou qualquer ação que favoreça a continuidade da fuga e/ou realização de um próximo apoio ao veículo principal.</li>
+  <li><span class="rule-num">▪</span> <strong>Identificação da Ocorrência:</strong> Ao chegar no QTH da ocorrência e avistar indivíduos arrombando o veículo principal (armados com pistolas ou armas brancas), americanos mortos ao chão caracterizam-se as ocorrências como boosting.</li>
+</ul>
 
-      <h2>Liberação de Unidades por Classe</h2>
-      <div class="def-list">
-        <div class="def-item">
-          <div class="def-term">PRINCIPAL B, C ou D</div>
-          <div class="def-desc">Abrirá a QRU com liberação para 3 unidades no principal, sem GRA.</div>
-        </div>
-        <div class="def-item">
-          <div class="def-term">PRINCIPAL S e A</div>
-          <div class="def-desc">Será 1 GRA e 3 unidades.</div>
-        </div>
-      </div>
+<h2>II. CLASSIFICAÇÃO DE OPERAÇÕES</h2>
+<ul class="rule-list">
+  <li><span class="rule-num">▪</span> <strong>Classe B ou Inferior:</strong> Acompanhamento por 3 unidades padrão e 6 em QRV. Limite de 3 viaturas por veículo de apoio sendo eles classe S (máximo de 9 viaturas de apoio). Proibida a participação do G.R.A. no acompanhamento principal.</li>
+  <li><span class="rule-num">▪</span> <strong>Classe A:</strong> Acompanhamento por 3 unidades padrão e 6 em QRV. Limite de 3 viaturas por apoio sendo eles classe S (máximo de 9 de apoio). Autorizada a atuação do G.S.A., exceto se o veículo de apoio for de Classe B ou inferior.</li>
+  <li><span class="rule-num">▪</span> <strong>Classe S:</strong> Acompanhamento por 3 unidades padrão e 6 em QRV. Permitidas 3 viaturas por veículo de apoio (máximo de 9 de apoio). Presença obrigatória do G.S.A., liberado para atuar em qualquer apoio independentemente da classe.</li>
+</ul>
 
-      <h2>Progressão de Força — Boosting</h2>
-      <div class="def-list">
-        <div class="def-item">
-          <div class="def-term">PRINCIPAL B, C ou D</div>
-          <div class="def-desc">PIT, BOX e SPIKE liberados nos veículos de APOIO. <strong>Não é permitido PIT e BOX no principal.</strong></div>
-        </div>
-        <div class="def-item">
-          <div class="def-term">PRINCIPAL A ou S</div>
-          <div class="def-desc">PIT e BOX liberados assim que o TRACKING for finalizado. PIT, BOX e SPIKE liberados nos APOIOS.</div>
-        </div>
-        <div class="def-item">
-          <div class="def-term">APOIOS AGRESSIVOS</div>
-          <div class="def-desc">Se TODOS os APOIOS estiverem "zaralhando" (agressivos, fazendo PIT de qualquer jeito), seja reativo: PIT, BOX e SPIKE liberados no PRINCIPAL e APOIOS.</div>
-        </div>
-      </div>
+<h2>III. PROTOCOLOS DE INTERVENÇÃO (PIT, BOX E SPIKE)</h2>
+<ul class="rule-list">
+  <li><span class="rule-num">▪</span> <strong>Aplicação de PIT:</strong> Permitido apenas até a velocidade máxima de 150 KM/H, com intervalo mínimo de 30 segundos entre tentativas. O objetivo é desestabilizar a trajetória, sendo estritamente proibido causar STALL proposital ou aplicar em áreas movimentadas e becos.</li>
+  <li><span class="rule-num">▪</span> <strong>Uso de SPIKE:</strong> Liberado contra apoios de Classe A ou S após confirmação de COD 4/COD 6 ou resgate. Uso exclusivo da unidade SPEED (ou se autorizado pelo Alto Comando). Proibido transportar no inventário pessoal.</li>
+</ul>
 
-      <h2>Fuga a Pé</h2>
-      <p>Com o tempo, os meliantes tentarão ser resgatados e descartar o veículo (risco de explosão). Qualquer resgate durante a QRU de Boosting é tratado como QRU normal. Ao aproximar e mostrar intenção de abrir porta de veículo: <strong>taser liberado</strong>.</p>
+<h2>IV. PROTOCOLOS PARA SITUAÇÕES ADVERSAS</h2>
+<ul class="rule-list">
+  <li><span class="rule-num">▪</span> <strong>Reabastecimento e Reparo:</strong> Autorizado a todos os oficiais (incluindo G.S.A.) no momento em que o veículo principal for flagrado abastecendo, reparando ou com a chegada confirmada dos apoios.</li>
+  <li><span class="rule-num">▪</span> <strong>Incapacitação de Unidade:</strong> Em caso de desacordamento, explosão ou queda do veículo em meio aquático, declara-se QTA absoluto, sendo vedado o retorno à ocorrência.</li>
+  <li><span class="rule-num">▪</span> <strong>Veículo Inoperante (4 Stalls):</strong> Persistindo a recusa de desembarque dos ocupantes, deve-se verbalizar a ordem por 3 vezes. Permanecendo o descumprimento, autoriza-se o uso do taser para extração.</li>
+  <li><span class="rule-num">▪</span> <strong>Capotamento:</strong> Os oficiais devem estabelecer cerco imediato ao redor do veículo. As unidades de apoio devem se posicionar estrategicamente para evitar intervenções externas.</li>
+</ul>
 
-      <h2>Prisão</h2>
-      <p>Com a captura, os indivíduos serão conduzidos pelo crime de Boosting, que <strong>não tem direito a fiança</strong>. Aplique apenas o crime de Boosting.</p>`},
+<h2>V. PROTOCOLO DE APREENSÃO E REGISTRO</h2>
+<ul class="rule-list">
+  <li><span class="rule-num">▪</span> <strong>Local de Apreensão:</strong> A apreensão do veículo principal deve ser efetuada exclusivamente na lateral da DP-G. Em caso de 4 stalls, utilize o kit de reparo para remover 1 stall e efetue a escolta até o local.</li>
+  <li><span class="rule-num">▪</span> <strong>Registro Fotográfico:</strong> O oficial responsável pela prisão no pátio deve realizar o registro fotográfico no local e compartilhá-lo com a equipe envolvida. Os demais oficiais mantêm vigilância ativa contra possíveis tentativas de resgate.</li>
+</ul>`},
   ruas:{title:'Ruas e Referências',group:'CURSOS',icon:'🗺️',eyebrow:'Referência',lead:'Material de apoio para localização e comunicação de pontos de referência.',html:``},
   cursoAb:{title:'Curso de Abordagem',group:'CURSOS',icon:'🤝',eyebrow:'Curso',lead:'Treinamento para execução padronizada de abordagens.',html:`<h2>Estrutura da Abordagem</h2>
       <div class="def-list">
