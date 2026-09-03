@@ -1,13 +1,15 @@
 const pages = {
-  home:{title:'Manual de Conduta',group:'INTRODUÇÃO',icon:'▤',eyebrow:'Documento Oficial',lead:'O 1º Batalhão de Polícia Militar Hardline estabelece, através deste manual, normas, critérios e princípios que regem a conduta, organização e funcionamento da corporação.',html:`<h2>Sobre este Manual</h2>
+  home:{title:'Manual de Conduta',group:'INTRODUÇÃO',icon:'▤',eyebrow:'Documento Oficial',lead:'O 1º Batalhão de Polícia Militar Hardline estabelece, através deste manual, normas, critérios e princípios que regem a conduta, organização e funcionamento da corporação.',html:`<div class="callout">
+        <span class="callout-icon">ℹ️</span>
+        <div>Este manual define o limite em que o policial pode agir. O agente público não deve ser engessado, porém comportamentos que quebram o estipulado pelo Manual <strong>poderão ser penalizados</strong>.</div>
+      </div>
+
+      <h2>Sobre este Manual</h2>
       <p>O presente manual de conduta busca a preservação dos <strong>princípios éticos</strong>, integridade e defesa dos policiais. Estarão descritos neste manual fatores cujos deverão ser cumpridos por todo e qualquer policial.</p>
 
       <div class="callout warn">
         <span class="callout-icon">⚠️</span>
         <div>O tempo mínimo de permanência na polícia é de <strong>30 dias</strong>. A quebra desse contrato acarretará em multa, independente do motivo da dispensa.</div>
-      </div>
-
-      
       </div>`},
   regulamento:{title:'Regulamento Básico',group:'INTRODUÇÃO',icon:'▤',eyebrow:'Normas Fundamentais',lead:'Diretrizes gerais que orientam a permanência, atuação e responsabilidade dos integrantes do 1º BPM HARDLINE.',html:`<ul class="rule-list">
         <li><span class="rule-num">01</span> Sempre deve-se seguir a hierarquia militar.</li>
@@ -22,7 +24,15 @@ const pages = {
         <li><span class="rule-num">10</span> Recrutas não podem sair de serviço sob circunstância alguma.</li>
         <li><span class="rule-num">11</span> O tempo mínimo de permanência na polícia é de 30 dias. A quebra acarretará em multa, independente do motivo.</li>
       </ul>`},
-  hierarquia:{title:'Hierarquia Militar',group:'ORGANIZAÇÃO',icon:'🎖️',eyebrow:'Organização',lead:'Estrutura hierárquica de referência para identificação de funções e cadeia de comando.',html:`<div class="rank-group">
+  hierarquia:{title:'Hierarquia Militar',group:'ORGANIZAÇÃO',icon:'🎖️',eyebrow:'Organização',lead:'Estrutura hierárquica de referência para identificação de funções e cadeia de comando.',html:`<div class="hierarchy-section">
+        <div class="rank-group">
+          <div class="rank-group-header superior">Oficiais Superiores</div>
+          <div class="rank-row"><span class="rank-badge">★★★</span><span class="rank-name">CMD. Geral / Coronel</span></div>
+          <div class="rank-row"><span class="rank-badge">★★◆</span><span class="rank-name">Tenente-Coronel</span></div>
+          <div class="rank-row"><span class="rank-badge">★◆◆</span><span class="rank-name">Major</span></div>
+        </div>
+
+        <div class="rank-group">
           <div class="rank-group-header intermediario">Oficiais Intermediários</div>
           <div class="rank-row"><span class="rank-badge">◆◆◆</span><span class="rank-name">Capitão</span></div>
         </div>
@@ -48,7 +58,12 @@ const pages = {
           <div class="rank-row"><span class="rank-badge">✦</span><span class="rank-name">Recruta</span></div>
         </div>
       </div>`},
-  upf:{title:'Conduta Militar (UPF)',group:'ORGANIZAÇÃO',icon:'⚡',eyebrow:'Disciplina',lead:'Padrões de conduta e postura profissional esperados durante o serviço.',html:`<h2>Escala do UPF</h2>
+  upf:{title:'Conduta Militar (UPF)',group:'ORGANIZAÇÃO',icon:'⚡',eyebrow:'Disciplina',lead:'Padrões de conduta e postura profissional esperados durante o serviço.',html:`<div class="callout danger">
+        <span class="callout-icon">🚨</span>
+        <div>Qualquer desvio ou abuso será considerado <strong>uso excessivo da força</strong> e estará sujeito a penalidades.</div>
+      </div>
+
+      <h2>Escala do UPF</h2>
 
       <div class="upf-pyramid">
         <div class="upf-row">
@@ -101,7 +116,17 @@ const pages = {
 
       <h3>🔴 Força Letal</h3>
       <p>É o mais extremo uso da força. <strong>Só deve ser empregado em último caso</strong>, quando todos os outros recursos já tiverem sido experimentados e o suspeito ameaça a vida de terceiros.</p>`},
-  comunicacao:{title:'Comunicação',group:'OPERAÇÕES',icon:'📡',eyebrow:'Operações',lead:'Padrão de comunicação para manter o rádio objetivo, organizado e compreensível.',html:`<h3>💬 Chat /CP</h3>
+  comunicacao:{title:'Comunicação',group:'OPERAÇÕES',icon:'📡',eyebrow:'Operações',lead:'Padrão de comunicação para manter o rádio objetivo, organizado e compreensível.',html:`<h2>Canais Internos</h2>
+
+      <h3>📻 Rádio</h3>
+      <p>Uso <strong>exclusivo</strong> para informações relacionadas a uma QRU em andamento. As transmissões devem ser breves. Conversas pessoais na frequência policial são <strong>proibidas</strong>.</p>
+
+      <div class="callout">
+        <span class="callout-icon">📻</span>
+        <div>Caso tenha informação prioritária enquanto outro policial está com a rádio aberta, module <strong>"QRX Prioridade"</strong> e aguarde para modular. Ao ouvir essa modulação, cesse imediatamente o que está transmitindo.</div>
+      </div>
+
+      <h3>💬 Chat /CP</h3>
       <p>O canal de comunicação interna. Usado para anúncios de entrada/saída/pausas, solicitação de PFEM, comunicados, orientações e informes de QRU.</p>
 
       <div class="code-block">
@@ -171,7 +196,25 @@ const pages = {
         <div class="pursuit-row p5"><span class="code-badge">5</span> Situação de troca de tiro (TIROS CONTRA A GUARNIÇÃO)</div>
         <div class="pursuit-row p6"><span class="code-badge">6</span> Investigação da área (360 PELO LOCAL)</div>
       </div>`},
-  acompanhamento:{title:'Acompanhamento',group:'OPERAÇÕES',icon:'🚓',eyebrow:'Procedimento Operacional',lead:'Orientações gerais para acompanhamento veicular dentro dos protocolos do batalhão.',html:`<div class="level-card med">
+  acompanhamento:{title:'Acompanhamento',group:'OPERAÇÕES',icon:'🚓',eyebrow:'Procedimento Operacional',lead:'Orientações gerais para acompanhamento veicular dentro dos protocolos do batalhão.',html:`<h2>Regras do Acompanhamento</h2>
+
+      <ul class="rule-list">
+        <li><span class="rule-num">R1</span> Não é permitido que uma viatura ultrapasse a outra sem a sua permissão.</li>
+        <li><span class="rule-num">R2</span> Deve-se respeitar o limite da QRU. Se o acompanhamento já estiver lotado e uma unidade der QTA, outra não pode substituir a mesma.</li>
+        <li><span class="rule-num">R3</span> Em caso de acidente/atropelamento, PARE imediatamente o acompanhamento e preste socorro.</li>
+        <li><span class="rule-num">R4</span> Somente dispare contra um veículo em fuga quando o mesmo tenha colocado alguma vida em risco (atropelamentos, disparos de arma de fogo, alto risco).</li>
+        <li><span class="rule-num">R5</span> Em caso de Suspeito de Código 5, será permitido até 5 unidades.</li>
+      </ul>
+
+      <h2>Níveis de Risco</h2>
+
+      <div class="level-grid">
+        <div class="level-card low">
+          <div class="num">BX</div>
+          <div class="level-title">Baixo Risco</div>
+          <div class="level-desc">Sem risco para a população e corporação.<br><strong>Limite de 3 unidades</strong></div>
+        </div>
+        <div class="level-card med">
           <div class="num">MD</div>
           <div class="level-title">Médio Risco</div>
           <div class="level-desc">O policial percebe ameaça e manobras arriscadas.<br><strong>Limite de 3 unidades</strong></div>
@@ -199,7 +242,12 @@ const pages = {
           <div class="v-body">Fica por fora dos becos realizando cerco parcial, sem fechar totalmente as saídas, para desviar o veículo e induzi-lo ao erro. Atentar às saídas pelo GPS.</div>
         </div>
       </div>`},
-  revista:{title:'Revista',group:'OPERAÇÕES',icon:'🔎',eyebrow:'Procedimento Operacional',lead:'Procedimentos de segurança e organização para revistas realizadas durante ocorrências.',html:`<h2>Situações de Fundada Suspeita</h2>
+  revista:{title:'Revista',group:'OPERAÇÕES',icon:'🔎',eyebrow:'Procedimento Operacional',lead:'Procedimentos de segurança e organização para revistas realizadas durante ocorrências.',html:`<div class="callout success">
+        <span class="callout-icon">🛡️</span>
+        <div>A fundada suspeita <strong>protege o oficial</strong>. Tendo enquadrado fundada suspeita, a legalidade da revista está prevista perante a lei.</div>
+      </div>
+
+      <h2>Situações de Fundada Suspeita</h2>
 
       <ul class="rule-list">
         <li><span class="rule-num">FS1</span> Ocultação Facial (uso de máscara)</li>
@@ -217,7 +265,18 @@ const pages = {
         <span class="callout-icon">🚺</span>
         <div>Um oficial <strong>masculino jamais deve revistar uma abordada feminina</strong>. É obrigatório solicitar uma policial feminina (PFEM). Se não houver PFEM em serviço, realizar o procedimento da caixa ("revistar (caixa)"). Se a suspeita não colaborar, permanece na cela até a chegada de uma PFEM.</div>
       </div>`},
-  abordagem:{title:'Abordagem',group:'OPERAÇÕES',icon:'🤝',eyebrow:'Procedimento Operacional',lead:'Fluxo de referência para abordagens organizadas e profissionais.',html:`<h2>Nível 1 — Baixo Risco</h2>
+  abordagem:{title:'Abordagem',group:'OPERAÇÕES',icon:'🤝',eyebrow:'Procedimento Operacional',lead:'Fluxo de referência para abordagens organizadas e profissionais.',html:`<div class="callout">
+        <span class="callout-icon">📌</span>
+        <div>
+          <strong>Lembre-se sempre:</strong><br>
+          • Nunca informe o motivo da abordagem antes do início da mesma<br>
+          • Sempre forneça seu QRA no início da abordagem<br>
+          • Haja cordialmente e com bom senso<br>
+          • Todas as ações devem ser indicadas ao abordado
+        </div>
+      </div>
+
+      <h2>Nível 1 — Baixo Risco</h2>
       <p>Abordagem sem risco aparente. Comumente empregada em infrações de trânsito. A educação e respeito ao civil são primordiais.</p>
 
       <div class="def-list">
@@ -246,7 +305,12 @@ const pages = {
           <div class="def-desc">Processo de contenção com técnicas de imobilização e força não letal. Caso o indivíduo não apresente risco claro à vida dos oficiais, o uso da força letal é permitido.</div>
         </div>
       </div>`},
-  cod5:{title:'Comportamento em CÓD.5',group:'OPERAÇÕES',icon:'🔴',eyebrow:'Código de Conduta',lead:'Referência para situações classificadas como CÓD.5.',html:`<h2>Uso de Arma de Fogo é Permitido Quando:</h2>
+  cod5:{title:'Comportamento em CÓD.5',group:'OPERAÇÕES',icon:'🔴',eyebrow:'Código de Conduta',lead:'Referência para situações classificadas como CÓD.5.',html:`<div class="callout danger">
+        <span class="callout-icon">🔫</span>
+        <div>O policial deve se esforçar para <strong>reduzir ao mínimo as lesões e danos</strong> ao cidadão, mesmo em situações de uso de força.</div>
+      </div>
+
+      <h2>Uso de Arma de Fogo é Permitido Quando:</h2>
 
       <ul class="rule-list">
         <li><span class="rule-num">✓</span> O indivíduo rouba uma viatura</li>
@@ -276,7 +340,13 @@ const pages = {
         <span class="callout-icon">📝</span>
         <div>Colete as informações (placa, modelo/cor, descrição do condutor/ocupantes, direção de fuga) e registre no /cp.<br>Exemplo: <code>Rebla Placa XXXXXX - Aviso 1</code></div>
       </div>`},
-  infracoes:{title:'Infrações e Definições',group:'INFRAÇÕES',icon:'⚖️',eyebrow:'Disciplina',lead:'Classificação e referência para análise de condutas incompatíveis com as normas internas.',html:`<div class="def-item">
+  infracoes:{title:'Infrações e Definições',group:'INFRAÇÕES',icon:'⚖️',eyebrow:'Disciplina',lead:'Classificação e referência para análise de condutas incompatíveis com as normas internas.',html:`<div class="def-list">
+        <div class="def-item">
+          <div class="def-term">INSUBORDINAÇÃO</div>
+          <div class="def-desc">Desobediência ou recusa de alguém a cumprir ordens ou comandos dados por outra pessoa em posição superior de hierarquia. É o descumprimento de uma ordem legal, direta, pessoal e clara.</div>
+        </div>
+
+        <div class="def-item">
           <div class="def-term">INDISCIPLINA</div>
           <div class="def-desc">Ações que vão contra as normas, regras e regulamentos estabelecidos no departamento. Pode incluir atrasos constantes, negligência de tarefas, mau uso de recursos, entre outras ações.</div>
         </div>
@@ -301,7 +371,16 @@ const pages = {
           <div class="def-desc">Previsto no Código Penal — consiste no ato de não acatar ordem legal de funcionário público.</div>
         </div>
       </div>`},
-  cursoCom:{title:'Comunicação Operacional',group:'CURSOS',icon:'📡',eyebrow:'Curso',lead:'Módulo de treinamento para padronização da comunicação em serviço.',html:`<div class="def-item">
+  cursoCom:{title:'Comunicação Operacional',group:'CURSOS',icon:'📡',eyebrow:'Curso',lead:'Módulo de treinamento para padronização da comunicação em serviço.',html:`<h2>Meios de Comunicação</h2>
+      <p>Dentro da polícia utilizamos dois principais meios de comunicação: a <strong>rádio principal</strong> (rádio policia) e o <strong>chat de comunicação interna (/cp)</strong>.</p>
+
+      <h2>Frequências</h2>
+      <div class="def-list">
+        <div class="def-item">
+          <div class="def-term">policia</div>
+          <div class="def-desc">Rádio onde <strong>todos os policiais devem estar conectados</strong>, independentemente da unidade.</div>
+        </div>
+        <div class="def-item">
           <div class="def-term">policiaspeed</div>
           <div class="def-desc">Rádio exclusiva da unidade SPEED. É proibida a entrada de qualquer pessoa que não pertença à unidade. Caso seja identificada essa entrada, o curso será removido.</div>
         </div>
@@ -362,7 +441,31 @@ const pages = {
         <div class="comment">// Exemplo</div>
         ATM | Sultan II | Placa: JE5 | Sem vagas | Polícia2
       </div>`},
-  modulacao:{title:'Modulação e Anúncios',group:'CURSOS',icon:'🎙️',eyebrow:'Curso',lead:'Padrão de voz e estrutura para anúncios operacionais.',html:`<div class="def-item">
+  modulacao:{title:'Modulação e Anúncios',group:'CURSOS',icon:'🎙️',eyebrow:'Curso',lead:'Padrão de voz e estrutura para anúncios operacionais.',html:`<h2>Exemplos de Modulação</h2>
+      <div class="code-block">
+        <div class="comment">// Abordagem COD 2</div>
+        QAP Central, unidade 271 iniciando abordagem de COD 2, QRU de suspeita de tráfico de drogas, a uma BF400 branca tripulado X2, no QTH Praia sentido Oeste próximo ao Píer, vagas para 2 unidades, preferência GTM.
+      </div>
+      <div class="code-block">
+        <div class="comment">// Acompanhamento</div>
+        QAP Central, unidade 921, iniciando acompanhamento QRU de Corrida Ilegal, na rua Straberry sentido Norte próximo à Praça, T20 coloração verde tripulada X2, vagas para 2 unidades preferência SPEED.
+      </div>
+      <div class="code-block">
+        <div class="comment">// QRX Prioridade</div>
+        QRX Prioridade Central, visual de um Shafter amarelo, placa zumbie, e indivíduos de roupas pretas, descalços efetuando disparos contra a unidade 529 na região do Porto.
+      </div>
+      <div class="code-block">
+        <div class="comment">// COD 4</div>
+        QAP Central, COD 4 no Silvia prata, QRU tráfico de drogas, indivíduo capotou o veículo na Forum Drive, GROOVE. TKS a todas as unidades.
+      </div>
+
+      <h2>QTA — Tipos</h2>
+      <div class="def-list">
+        <div class="def-item">
+          <div class="def-term">QTA DEFINITIVO</div>
+          <div class="def-desc">Pneu furado, sem gasolina, QSV capotada etc. Não retorna para a QRU, exceto em retomada de visual após CÓDIGO 6, pois inicia-se uma nova QRU com os mesmos oficiais.</div>
+        </div>
+        <div class="def-item">
           <div class="def-term">BREVE QTA</div>
           <div class="def-desc">Terciária presta socorro em acidentes envolvidos na QRU e poderá retornar ao acompanhamento assim que possível. Também aplicável se o cachorro morder ou parceiro de PTR tiver forte dor de cabeça.</div>
         </div>
@@ -397,7 +500,16 @@ const pages = {
         <div class="comment">// Pacificação</div>
         Comunicamos que hoje será feito uma pacificação na região do Gueto da Groove Street. O objetivo é promover a segurança e tranquilidade em nossa cidade, além de acabar com o crime organizado. Pedimos a colaboração de todos os cidadãos para que se afastem da área durante a operação. Qualquer indivíduo que permanecer na região será considerado hostil.
       </div>`},
-  tablet:{title:'Curso de Tablet',group:'CURSOS',icon:'📱',eyebrow:'Curso',lead:'Uso operacional do tablet e organização das informações.',html:`<div class="def-item">
+  tablet:{title:'Curso de Tablet',group:'CURSOS',icon:'📱',eyebrow:'Curso',lead:'Uso operacional do tablet e organização das informações.',html:`<!-- Módulo 01 -->
+      <h2>01 — Tela Inicial: Dashboard</h2>
+      <p>Ao abrir o tablet, a primeira tela que você verá é o <strong>Dashboard</strong> — o painel central do departamento. Ele apresenta em tempo real um resumo de tudo que está acontecendo no turno.</p>
+
+      <div class="def-list">
+        <div class="def-item">
+          <div class="def-term">👥 OFICIAIS EM SERVIÇO (ex: 12/76)</div>
+          <div class="def-desc">Ativos agora / Total de membros cadastrados na corporação. Os números atualizam em tempo real.</div>
+        </div>
+        <div class="def-item">
           <div class="def-term">🔒 PRISÕES HOJE</div>
           <div class="def-desc">Total de prisões acumuladas no dia atual.</div>
         </div>
@@ -740,7 +852,21 @@ const pages = {
         <span class="callout-icon">⭐</span>
         <div><strong>Curso Concluído!</strong> Você está preparado para usar todas as ferramentas do tablet com profissionalismo. Bom serviço, oficial!</div>
       </div>`},
-  cursoAcomp:{title:'Curso de Acompanhamento',group:'CURSOS',icon:'🚓',eyebrow:'Curso',lead:'Treinamento sobre coordenação e comunicação durante acompanhamentos.',html:`<div class="def-item">
+  cursoAcomp:{title:'Curso de Acompanhamento',group:'CURSOS',icon:'🚓',eyebrow:'Curso',lead:'Treinamento sobre coordenação e comunicação durante acompanhamentos.',html:`<h2>Orientações Gerais</h2>
+      <ul class="rule-list">
+        <li><span class="rule-num">01</span> Para quem não tem certificado ou não pertença a grupamento que permita uso solo da viatura, é proibido patrulhar sozinho.</li>
+        <li><span class="rule-num">02</span> Soldado+ sem parceiro disponível pode patrulhar SOLO, respeitando a preservação da sua segurança.</li>
+        <li><span class="rule-num">03</span> A única ocasião de 4 policiais patrulhando juntos é no patrulhamento com PCD.</li>
+        <li><span class="rule-num">04</span> Em acompanhamento de motocicleta com queda, deve-se tentar cabeçada ou taser antes que o indivíduo acelere novamente. Em nova queda, spike é liberado.</li>
+      </ul>
+
+      <h2>Preservação da Vida</h2>
+      <div class="def-list">
+        <div class="def-item">
+          <div class="def-term">COLISÕES NO ACOMPANHAMENTO</div>
+          <div class="def-desc">Secundária ou terciária verifica o veículo colidido/atropelado. Se estiver de primária sem secundária/terciária, grave a placa do acompanhado e pare para ajudar.</div>
+        </div>
+        <div class="def-item">
           <div class="def-term">COLISÕES FORA DO ACOMPANHAMENTO</div>
           <div class="def-desc">Como policial, é obrigação auxiliar e arcar com custos caso haja dano material.</div>
         </div>
@@ -862,8 +988,49 @@ const pages = {
   <div class="def-item"><div class="def-term">Local de Apreensão:</div><div class="def-desc">A apreensão do veículo principal deve ser efetuada exclusivamente na lateral da DP-G. Em caso de 4 stalls, utilize o kit de reparo para remover 1 stall e efetue a escolta até o local.</div></div>
   <div class="def-item"><div class="def-term">Registro Fotográfico:</div><div class="def-desc">O oficial responsável pela prisão no pátio deve realizar o registro fotográfico no local e compartilhá-lo com a equipe envolvida. Os demais oficiais mantêm vigilância ativa contra possíveis tentativas de resgate.</div></div>
 </div>`},
-  ruas:{title:'Ruas e Referências',group:'CURSOS',icon:'🗺️',eyebrow:'Referência',lead:'Material de apoio para localização e comunicação de pontos de referência.',html:``},
-  cursoAb:{title:'Curso de Abordagem',group:'CURSOS',icon:'🤝',eyebrow:'Curso',lead:'Treinamento para execução padronizada de abordagens.',html:`<h2>Estrutura da Abordagem</h2>
+  ruas:{title:'Ruas e Referências',group:'CURSOS',icon:'🗺️',eyebrow:'Referência',lead:'Material de apoio para localização e comunicação de pontos de referência.',html:`<table class="q-table">
+        <thead>
+          <tr>
+            <th>Referência Popular</th>
+            <th>Nome Oficial / Direção</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Rua da Faculdade</td><td class="q-meaning">NORTH ROCKFORD DRIVE | SUL</td></tr>
+          <tr><td>Rua do Cemitério</td><td class="q-meaning">WEST ECLIPSE BOULEVARD | LESTE</td></tr>
+          <tr><td>Rua HP Praia</td><td class="q-meaning">PLAYA VISTA | SUL</td></tr>
+          <tr><td>Rua Alta Shopping</td><td class="q-meaning">BOULEVARD DEL PERRO | LESTE</td></tr>
+          <tr><td>Rua Bahama Mamas</td><td class="q-meaning">MARATHON AVENUE | LESTE</td></tr>
+          <tr><td>Rua Hollywood / Cinema / Estacionamento Colorido</td><td class="q-meaning">SOUTH ROCKFORD DRIVE | SUL</td></tr>
+          <tr><td>Rua DP RAED / DP do Veneza</td><td class="q-meaning">SAN ANDREAS AVENUE | OESTE</td></tr>
+          <tr><td>Rua Monumento Chinês / Estacionamento Vermelho / Praça</td><td class="q-meaning">VESPUCCI BOULEVARD</td></tr>
+          <tr><td>Rua Praça / Costa do Pillbox (HP Praça)</td><td class="q-meaning">STRAWBERRY AVENUE</td></tr>
+          <tr><td>Rua Frente Pillbox (HP Praça)</td><td class="q-meaning">ELGIN AVENUE</td></tr>
+          <tr><td>Rodovia Lateral Arcadius e Construção Alta</td><td class="q-meaning">DEL PERRO FREEWAY | LESTE</td></tr>
+          <tr><td>Rodovia Lateral Estacionamento Vermelho</td><td class="q-meaning">LA PUERTA FREEWAY</td></tr>
+          <tr><td>Rua Tequilala / Hotel Eclipse Towers / até MC Donald's e Disco Voador</td><td class="q-meaning">ECLIPSE BOULEVARD</td></tr>
+          <tr><td>Após Banco Central</td><td class="q-meaning">VINEWOOD BOULEVARD</td></tr>
+          <tr><td>Rua Lojinha Central / Condomínio Central / Posto do Central</td><td class="q-meaning">CLINTON AVENUE</td></tr>
+          <tr><td>Rua de Baixo do Banco Central / Ammunation</td><td class="q-meaning">SPANISH AVENUE</td></tr>
+          <tr><td>Rua Vila do Chaves</td><td class="q-meaning">HAWICK AVENUE</td></tr>
+          <tr><td>Rua Ammunation Praça</td><td class="q-meaning">ADAM'S APPLE BOULEVARD</td></tr>
+          <tr><td>Rua Construção Baixa (Alta News)</td><td class="q-meaning">CALAIS AVENUE</td></tr>
+          <tr><td>Rua Alta News</td><td class="q-meaning">PALOMINO AVENUE</td></tr>
+          <tr><td>Veneza</td><td class="q-meaning">PROSPERITY STREET</td></tr>
+        </tbody>
+      </table>`},
+  cursoAb:{title:'Curso de Abordagem',group:'CURSOS',icon:'🤝',eyebrow:'Curso',lead:'Treinamento para execução padronizada de abordagens.',html:`<div class="callout">
+        <span class="callout-icon">📌</span>
+        <div>
+          • Nunca informe o motivo da abordagem antes do início<br>
+          • Sempre forneça seu QRA no início<br>
+          • Haja cordialmente e com bom senso<br>
+          • Todas as ações devem ser indicadas ao abordado<br>
+          • <strong>Nunca inicie uma abordagem sozinho</strong> — solicite apoio à Central via Rádio Polícia
+        </div>
+      </div>
+
+      <h2>Estrutura da Abordagem</h2>
       <div class="def-list">
         <div class="def-item"><div class="def-term">1 — QSV</div><div class="def-desc">Luminoso e sonoro sempre ligados!</div></div>
         <div class="def-item"><div class="def-term">2 — ORDEM DE PARADA</div><div class="def-desc">"Cidadão, encoste o veículo a direita." / "Desligue o veículo." / "Abaixe os vidros." / "Mantenha as mãos no volante, onde eu possa ver." / "Não utilize nenhum meio de comunicação durante a abordagem."</div></div>
