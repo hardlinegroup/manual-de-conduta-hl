@@ -129,7 +129,48 @@ const pages = {
         <div class="comment">// Exemplo de uso do /112</div>
         "Olá, Doutores, boa tarde. Os oficiais estão autorizados a prestar primeiros socorros nas ruas? TKS, Comando Geral PT."
       </div>`},
-  codigos:{title:'Códigos Q',group:'OPERAÇÕES',icon:'▣',eyebrow:'Comunicação Operacional',lead:'Referência rápida para códigos utilizados na comunicação da corporação.',html:``},
+  codigos:{title:'Códigos Q',group:'OPERAÇÕES',icon:'▣',eyebrow:'Comunicação Operacional',lead:'Referência rápida para códigos utilizados na comunicação da corporação.',html:`<table class="q-table">
+        <thead>
+          <tr>
+            <th>Código</th>
+            <th>Significado</th>
+            <th>Exemplo de uso</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="q-code">QAP</td><td><span class="q-meaning">Na escuta?</span></td><td class="q-example">"QAP Fulano..."</td></tr>
+          <tr><td class="q-code">QSL</td><td><span class="q-meaning">Entendido / Ok</span></td><td class="q-example">"Fulano copiou a QTC?" - "QSL, Ciclano"</td></tr>
+          <tr><td class="q-code">QTH</td><td><span class="q-meaning">Localização</span></td><td class="q-example">"QAP Fulano, qual seu QTH?"</td></tr>
+          <tr><td class="q-code">QRA</td><td><span class="q-meaning">Identidade do policial</span></td><td class="q-example">"Soldado, qual seu QRA?"</td></tr>
+          <tr><td class="q-code">QRU</td><td><span class="q-meaning">Ocorrência</span></td><td class="q-example">"QAP Central, alguma QRU em andamento?"</td></tr>
+          <tr><td class="q-code">QRV</td><td><span class="q-meaning">Às ordens</span></td><td class="q-example">"QAP Fulano em total QRV"</td></tr>
+          <tr><td class="q-code">QSA</td><td><span class="q-meaning">Teste de frequência (1–5)</span></td><td class="q-example">"QSA Central!!" - "QSA 5"</td></tr>
+          <tr><td class="q-code">QRX</td><td><span class="q-meaning">Limpar canal de comunicação</span></td><td class="q-example">"QRX Prioridade, Central!!"</td></tr>
+          <tr><td class="q-code">QTO</td><td><span class="q-meaning">Banheiro</span></td><td class="q-example">"Breve QTO"</td></tr>
+          <tr><td class="q-code">QSM</td><td><span class="q-meaning">Repetir última mensagem</span></td><td class="q-example">"QAP Fulano, QSM na última QTC"</td></tr>
+          <tr><td class="q-code">QTC</td><td><span class="q-meaning">Mensagem</span></td><td class="q-example">"QAP Fulano, QSM na última QTC"</td></tr>
+          <tr><td class="q-code">QTA</td><td><span class="q-meaning">Cancelar</span></td><td class="q-example">"QTA da última QTC" / "QTA do acompanhamento"</td></tr>
+          <tr><td class="q-code">QSV</td><td><span class="q-meaning">Viatura</span></td><td class="q-example">"QAP Fulano, guarde sua QSV"</td></tr>
+          <tr><td class="q-code">QSJ</td><td><span class="q-meaning">Dinheiro Sujo</span></td><td class="q-example">"O meliante tinha 20k em QSJ"</td></tr>
+          <tr><td class="q-code">QRR</td><td><span class="q-meaning">Apoio / Reforço</span></td><td class="q-example">"QAP Central, solicito QRR nesta QRU"</td></tr>
+          <tr><td class="q-code">QTI</td><td><span class="q-meaning">À caminho</span></td><td class="q-example">"QTI do QTH do Fulano"</td></tr>
+          <tr><td class="q-code">QRL</td><td><span class="q-meaning">Ocupado</span></td><td class="q-example">"Estou em breve QRL para abastecer a QSV"</td></tr>
+          <tr><td class="q-code">QTX</td><td><span class="q-meaning">Sair de serviço</span></td><td class="q-example">"Cb. Dani Pellegrini indo de QTX"</td></tr>
+          <tr><td class="q-code">QRT</td><td><span class="q-meaning">Sinal de Policial Ferido</span></td><td class="q-example">Acionado pelo SmartWatch</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Códigos Numéricos de Situação</h2>
+
+      <div class="pursuit-table">
+        <div class="pursuit-row p0"><span class="code-badge">0</span> Patrulha de rotina (SEM QRU)</div>
+        <div class="pursuit-row p1"><span class="code-badge">1</span> Situação de Trânsito (BAIXO RISCO)</div>
+        <div class="pursuit-row p2"><span class="code-badge">2</span> Situação de atendimento a denúncias (MÉDIO RISCO)</div>
+        <div class="pursuit-row p3"><span class="code-badge">3</span> Situação de atendimento a denúncias (ALTO RISCO)</div>
+        <div class="pursuit-row p4"><span class="code-badge">4</span> Situação sob controle (ÁREA SEGURA)</div>
+        <div class="pursuit-row p5"><span class="code-badge">5</span> Situação de troca de tiro (TIROS CONTRA A GUARNIÇÃO)</div>
+        <div class="pursuit-row p6"><span class="code-badge">6</span> Investigação da área (360 PELO LOCAL)</div>
+      </div>`},
   acompanhamento:{title:'Acompanhamento',group:'OPERAÇÕES',icon:'🚓',eyebrow:'Procedimento Operacional',lead:'Orientações gerais para acompanhamento veicular dentro dos protocolos do batalhão.',html:`<div class="level-card med">
           <div class="num">MD</div>
           <div class="level-title">Médio Risco</div>
